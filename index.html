@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>Home | Hugo Whittome</title>
+	</head>
+	<body>
+		<script src="js/main.js"></script>
+		<div id="navbar" class="navbar">
+			<div class="dropdown">
+				<button class="dropbtn">
+					Theme
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#" onclick="makeDefaultTheme();">Default</a>
+					<a href="#" onclick="makeLightTheme();">Light</a>
+					<a href="#" onclick="makeDarkTheme();">Ultra Dark</a>
+				</div>
+			</div>
+			<a href="projects.html">Projects</a>
+			<a class="active">Home</a>
+		</div>
+
+		<div>
+			<img src="img/Twitter-Logo_v3.png" class="logo" />
+			<div id="aboutMe">
+				<h1>About me</h1>
+				<h4 class="center">
+					Hello, I'm Hugo. I am an A-Level student at
+					<a href="https://www.exetermathematicsschool.ac.uk/" target="_blank">Exeter Maths School</a>,
+					studying Maths, Further Maths, Computer Science and Physics. My passion is programming. I mainly
+					program in Python, however I am currently working on projects that include multiple languages (e.g.
+					C++ and Haskell). My other hobbies include skiing, gaming, cycling and sailing.
+				</h4>
+			</div>
+		</div>
+
+		<div class="software">
+			<h1>What I use</h1>
+			<div class="row">
+				<div class="columnLeft">
+					<h4>
+						I use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> for
+						editing source code with the horizon theme. I really like it because of the debugging
+						capabilities, how easy it is to use and how light-weight it is. Plus I don't extremely like
+						using VIM.
+					</h4>
+				</div>
+				<div class="columnRight">
+					<img src="img/vscode.png" class="center" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="columnLeft">
+					<img src="img/archlinux.png" class="center" />
+				</div>
+				<div class="columnRight">
+					<h4>
+						I use <a href="https://www.archlinux.org/" target="_blank">Arch Linux</a> for my main
+						programming operating system with gnome as my desktop environment. However, I also use Windows,
+						sadly, for gaming as I cannot stand the minimal performance lost with some games when using
+						Proton or softwares like it. I also use Windows for my Surface Pro, because there is no good
+						alternative to OneNote just yet.
+					</h4>
+				</div>
+			</div>
+		</div>
+
+		<hr class="center" />
+		<div class="row">
+			<div class="columnLeft">
+				<h2>Check out my projects</h2>
+			</div>
+			<div class="columnRight">
+				<a href="projects.html" class="center Link">Projects</a>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<a class="Text">Contact me</a>
+		<a href="https://twitter.com/realDonaldTrump" class="Link"><img src="img/Twitter.png" /> Twitter</a>
+		<a href="https://github.com/DeDerpster" class="Link"><img src="img/Github.png" /> Github</a>
+	</footer>
+</html>

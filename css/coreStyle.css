@@ -63,9 +63,11 @@ a.Link {
 
 footer {
 	margin-top: 25px;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	margin-left: 25%;
+	margin-right: 25%;
 	width: 50%;
+	bottom: 0;
 }
 
 footer a.Link {

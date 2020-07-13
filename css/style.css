@@ -97,12 +97,41 @@ footer a.Text {
 	font-size: 25px;
 }
 
-@media only screen and (max-width: 768px) {
-	/* For mobile phones: */
-	[class*="center"] {
+img.center {
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+	.center {
 		width: 90%;
+		margin-top: 50px;
 	}
-	[class*="h2"] {
+	h1 {
 		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.columnLeft {
+		flex: 45%;
+		margin-left: 5%;
+	}
+	.columnRight {
+		flex: 45%;
+		margin-right: 5%;
+	}
+
+	.columnLeft.center,
+	.columnRight.center {
+		margin-top: 50%;
+	}
+
+	footer a.Link {
+		margin-top: 0px;
 	}
 }

@@ -95,3 +95,35 @@ footer a.Text {
 	padding: 14px 16px;
 	font-size: 25px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+	.center {
+		width: 90%;
+		margin-top: 50px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.columnLeft {
+		flex: 45%;
+		margin-left: 5%;
+	}
+	.columnRight {
+		flex: 45%;
+		margin-right: 5%;
+	}
+
+	.columnLeft.center,
+	.columnRight.center {
+		margin-top: 50%;
+	}
+
+	footer a.Link {
+		margin-top: 0px;
+	}
+}

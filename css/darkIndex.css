@@ -24,3 +24,14 @@ img.logo {
 	width: 100vw;
 	margin-left: -22px;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+	img.logo {
+		width: 90%;
+		padding-top: 25px;
+	}
+	#aboutMe,
+	.software {
+		margin-left: -1%;
+	}
+}

@@ -1,8 +1,3 @@
-body {
-	background-color: #1c1e26;
-	color: white;
-}
-
 .center {
 	display: block;
 	margin-left: auto;
@@ -25,13 +20,8 @@ h2 {
 	font-weight: 100;
 }
 
-a {
-	color: white;
-}
-
 a.Link {
 	border-radius: 10px;
-	color: white;
 	text-decoration: none;
 	text-align: center;
 	padding: 7px 8px;
@@ -39,12 +29,6 @@ a.Link {
 	font-size: 30px;
 	font-weight: bold;
 }
-
-a.Link:hover {
-	background-color: white;
-	color: black;
-}
-
 .row {
 	display: flex;
 }
@@ -93,11 +77,6 @@ footer a.Link {
 	margin-right: 5px;
 	font-size: 25px;
 	float: right;
-}
-
-footer a.Link:hover {
-	background-color: white;
-	color: black;
 }
 
 footer img {

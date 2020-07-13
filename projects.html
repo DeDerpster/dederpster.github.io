@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/navbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/coreStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/defaultStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/coreNavbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/defaultNavbar.css" />
 		<title>Projects | Hugo Whittome</title>
 	</head>
 	<body>
@@ -16,9 +18,9 @@
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="#">Default</a>
-					<a href="#">Light</a>
-					<a href="#">Ultra Dark</a>
+					<a href="#" onclick="makeDefaultTheme();">Default</a>
+					<a href="#" onclick="makeLightTheme();">Light</a>
+					<a href="#" onclick="makeDarkTheme();">Ultra Dark</a>
 				</div>
 			</div>
 			<a class="active">Projects</a>

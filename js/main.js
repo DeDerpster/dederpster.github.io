@@ -3,34 +3,33 @@ let ticking = false;
 
 function makeDefaultTheme() {
 	var links = document.getElementsByTagName("link");
-	var oldlink = links.item(0);
-
-	var newlink = document.createElement("link");
-	newlink.setAttribute("rel", "stylesheet");
-	newlink.setAttribute("type", "text/css");
-	newlink.setAttribute("href", "css/style.css");
-
-	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-
 	var oldlink = links.item(1);
 
 	var newlink = document.createElement("link");
 	newlink.setAttribute("rel", "stylesheet");
 	newlink.setAttribute("type", "text/css");
-	newlink.setAttribute("href", "css/navbar.css");
+	newlink.setAttribute("href", "css/defaultStyle.css");
 
 	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 
-	var oldlink = links.item(2);
+	var oldlink = links.item(3);
+
+	var newlink = document.createElement("link");
+	newlink.setAttribute("rel", "stylesheet");
+	newlink.setAttribute("type", "text/css");
+	newlink.setAttribute("href", "css/defaultNavbar.css");
+
+	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
 	console.log(page);
 	if (page == "index.html") {
+		var oldlink = links.item(5);
 		var newlink = document.createElement("link");
 		newlink.setAttribute("rel", "stylesheet");
 		newlink.setAttribute("type", "text/css");
-		newlink.setAttribute("href", "css/index.css");
+		newlink.setAttribute("href", "css/defaultIndex.css");
 
 		document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 	}
@@ -39,7 +38,7 @@ function makeDefaultTheme() {
 
 function makeDarkTheme() {
 	var links = document.getElementsByTagName("link");
-	var oldlink = links.item(0);
+	var oldlink = links.item(1);
 
 	var newlink = document.createElement("link");
 	newlink.setAttribute("rel", "stylesheet");
@@ -48,7 +47,7 @@ function makeDarkTheme() {
 
 	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 
-	var oldlink = links.item(1);
+	var oldlink = links.item(3);
 
 	var newlink = document.createElement("link");
 	newlink.setAttribute("rel", "stylesheet");
@@ -57,12 +56,11 @@ function makeDarkTheme() {
 
 	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 
-	var oldlink = links.item(2);
-
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
 	console.log(page);
 	if (page == "index.html") {
+		var oldlink = links.item(5);
 		var newlink = document.createElement("link");
 		newlink.setAttribute("rel", "stylesheet");
 		newlink.setAttribute("type", "text/css");
@@ -76,7 +74,7 @@ function makeDarkTheme() {
 function makeLightTheme() {
 	var links = document.getElementsByTagName("link");
 	console.log(links);
-	var oldlink = links.item(0);
+	var oldlink = links.item(1);
 
 	var newlink = document.createElement("link");
 	newlink.setAttribute("rel", "stylesheet");
@@ -85,7 +83,7 @@ function makeLightTheme() {
 
 	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 
-	var oldlink = links.item(1);
+	var oldlink = links.item(3);
 
 	var newlink = document.createElement("link");
 	newlink.setAttribute("rel", "stylesheet");
@@ -94,11 +92,10 @@ function makeLightTheme() {
 
 	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 
-	var oldlink = links.item(2);
-
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
 	if (page == "index.html") {
+		var oldlink = links.item(5);
 		var newlink = document.createElement("link");
 		newlink.setAttribute("rel", "stylesheet");
 		newlink.setAttribute("type", "text/css");

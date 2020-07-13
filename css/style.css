@@ -63,6 +63,20 @@ a.Link:hover {
 	padding-left: 1%;
 }
 
+.columnLeft h4 {
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.columnRight h4 {
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 footer {
 	margin-top: 25px;
 	margin-left: auto;
@@ -104,11 +118,12 @@ img.center {
 	transform: translateY(-50%);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media only screen and (max-device-width: 812px) {
 	.center {
 		width: 90%;
 		margin-top: 50px;
 	}
+
 	h1 {
 		font-size: 50px;
 	}
@@ -121,17 +136,31 @@ img.center {
 		flex: 45%;
 		margin-left: 5%;
 	}
+
+	.columnLeft img {
+		width: 70%;
+	}
+
 	.columnRight {
 		flex: 45%;
 		margin-right: 5%;
 	}
 
-	.columnLeft.center,
-	.columnRight.center {
-		margin-top: 50%;
+	.columnRight img {
+		width: 70%;
 	}
 
 	footer a.Link {
 		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-device-width: 600px) {
+	.columnLeft img {
+		width: 90%;
+	}
+
+	.columnRight img {
+		width: 90%;
 	}
 }
